@@ -7,7 +7,8 @@ export const getTrendingImages = async () => {
         const res = await fetch(`${baseURL}/photos?per_page=30`, {
             headers: {
                 Authorization: `Client-ID ${API_KEY}`,
-            },
+
+            }
         });
         if (!res.ok) {
             console.error("failed", res.status);
